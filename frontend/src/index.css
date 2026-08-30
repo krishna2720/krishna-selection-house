@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* A tiny bit of global styling that is easier to write here than
+   repeat with Tailwind classes everywhere. */
+body {
+  background-color: #fbf6ec; /* ivory */
+  color: #2b211d; /* charcoal */
+  scroll-behavior: smooth;
+}
+
+/* Respect users who prefer reduced motion (accessibility). */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
